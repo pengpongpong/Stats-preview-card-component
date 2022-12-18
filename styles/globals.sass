@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap')
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+$dark_blue: hsl(233, 47%, 7%)
+$desaturated_blue: hsl(244, 38%, 16%)
+$violet: hsl(277, 64%, 61%)
+$violet1: #9932cc
+$white: hsl(0, 0%, 100%)
+$white_para: hsla(0, 0%, 100%, 0.75)
+$white_stats_h: hsla(0, 0%, 100%, 0.6)
+
+$inter: 'Inter', sans-serif
+$lexend_deca: 'Lexend Deca', sans-serif
+
+$screen_mid: 1200px
+$screen_big: 2500px
+
+body
+    width: 100vw
+    height: 100vh
+    background: $dark_blue
+    color: $white
+    display: grid
+    place-items: center
+
+#__next
+    display: grid
+    place-items: center
+
+main
+    width: 60vw
+    display: flex
+    margin: 5rem 0
+    flex-direction: row-reverse
+    background: $desaturated_blue
+    border-radius: 10px
+    overflow: hidden
+    @media (max-width: $screen_mid)
+        flex-direction: column
+        width: 90%
+
+.business_img
+    width: 50%
+    position: relative
+    @media (max-width: $screen_mid)
+        width: 100%
+        height: 30%
+
+    .overlay
+        width: 100%
+        height: 100%
+        background-color: darken($violet, 20%)
+        opacity: .5
+        position: absolute
+
+    img
+        width: 100%
+        height: 100%
+
+.description
+    width: 50%
+    padding: 4rem
+    @media (max-width: $screen_mid)
+        width: 100%
+        height: 70%
+        padding: 2.5rem
+        text-align: center
+    @media (min-width: $screen_big)
+        padding: 5rem
+.title
+    color: $white
+    font-family: $inter
+    font-size: 2.3rem
+    @media (max-width: $screen_mid)
+        font-size: 1.7rem
+    @media (min-width: $screen_big)
+        font-size: 3.2rem
+    span
+        color: $violet
+
+.title_paragraph
+    color: $white_stats_h
+    font-size: 1rem
+    margin: 1.5rem 1rem 0 0
+    line-height: 2rem
+    font-family: $lexend_deca
+    @media (max-width: $screen_mid)
+        margin: 1.2rem 0 0 0
+        font-size: .9rem
+    @media (min-width: $screen_big)
+        font-size: 1.4rem
+        line-height: 2.5rem
+        margin: 2.5rem 1.5rem 0 0
+
+.stats
+    width: 80%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 5rem 0 0 0
+    gap: 10px
+    letter-spacing: 1px
+    @media (max-width: $screen_mid)
+        flex-direction: column
+        width: 100%
+        gap: 1.7rem
+        padding: 3rem 0 0 0
+    @media (min-width: $screen_big)
+        padding: 8rem 0 0 0
+    .stats_h
+        color: $white
+        font-family: $inter
+        font-size: 1.5rem
+        @media (min-width: $screen_big)
+            font-size: 2rem
+    .stats_p
+        color: $white_para
+        text-transform: uppercase
+        font-family: $lexend_deca
+        font-size: .8rem
+        margin: .6rem 0
+        @media (min-width: $screen_big)
+            font-size: 1rem
+
+.attribution
+    font-size: 13px
+    text-align: center
+    font-family: $inter
+    a
+        color: $violet
