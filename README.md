@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/pengpongpong/Stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://stats-preview-card-component-rosy-xi.vercel.app/)
+- Live Site URL: [Add live site URL here](https://stats-preview-card-component-ebon.vercel.app/)
 
 ## My process
 
